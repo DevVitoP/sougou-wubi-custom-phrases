@@ -1,9 +1,6 @@
-# <font color=#ff8800>:boom:86.txt:boom:</font>
-> <font color=#00ffff>:star:作为通用码表或用来定制码表的数据来源</font>
-
-# <font color=#ff8800>:zap:Phrases.ini:zap:</font>
+# <font color=#ff8800>:zap:phrases.ini:zap:</font>
 > <font color=#00ffff>:star:为搜狗五笔的定制的码表</font>     
-> <font color=#00ffff>可以在自定义短语功能中粘贴内容，也可以直接替换本地内的</font>    
+> <font color=#00ffff>可以在自定义短语功能中粘贴内容，十分建议以管理员身份放入搜狗系统词库内</font>    
 
 
 ## <font color=#ffff88>:fire:关于Phrases.ini的定制:fire:</font>
@@ -20,8 +17,15 @@
 
 > <font color=#00ffff>:three:.基于常用单字1500进行更改，使常单1500尽能盲打出来。当字的使用不如词的时候，它将被置后，尽可能地在2号位置(为生文杂文提速)。</font>    
 
-> <font color=#00ffff>:four:.将词库全部浏览后根据频率更改顺序(打词提速)</font>    
+> <font color=#00ffff>:four:.将词库全部浏览后根据频率更改顺序(打词提速)(计划进行ing...)</font>    
 
 > <font color=#00ffff>:five:.基于实际生活中的使用更改顺序(计划进行ing...)</font>    
+
+> <font color=#00ffff>:star:当前优先计划:df\_multi.txt候选修改(计划进行ing...)</font>    
+
+# <font color=#ff8800>:boom:内容说明:boom:</font>
+> <font color=#00ffff>:star:86.txt作为通用码表或用来定制码表的数据来源</font>    
+> <font color=#00ffff>:star:ez\_one.txt,df\_multi.txt为ezdf.c生成的有无候选，候选情况表</font>    
+> <font color=#00ffff>:star:test\_theroy.c作为生成理论码表的源码</font>    
 
 
