@@ -7,7 +7,7 @@
 
 
 ## <font color=#ffff88>:boom:本词库的上手:boom:</font>
-> <font color=#00ffff>本词库就是86词库，打法并没有变，重点熟悉`1简1`,`1简2`,`2简1`现在的顺序就可以上手</font>    
+> <font color=#00ffff>&nbsp;&nbsp;本词库就是86词库，打法并没有变，重点熟悉`1简1`,`1简2`,`2简1`现在的顺序就可以上手</font>    
 > <font color=#00ffff>`针对词库练习文本`目录内的`practice.txt`,是本词库的`1简1`,`1简2`,`2简1`的并集</font>    
 > <font color=#00ffff>具体打法可以快速阅览目录下的`practice_codec.txt`(只含里面有的单字的编码)</font>    
 
@@ -49,7 +49,7 @@
 > |ff|土|
 > |xxxx|纟|
 
-> <font color=#00ffff>:two:.`2简1`修改：</font>
+> <font color=#00ffff>:two:.`2简1`修改：</font>    
 > <font color=#00ff88>:star:1.保留直观的2简;</font>    
 > <font color=#00ff88>:star:2.尽可能去除与`1简1`,`1简2`交集;</font>    
 > <font color=#00ff88>:star:3.尽可能调入调频难打字;</font>    

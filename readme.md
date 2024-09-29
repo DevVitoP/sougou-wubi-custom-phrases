@@ -11,7 +11,7 @@
 * <font color=#ff0088>Folk SDK去工作：</font>    
 > <font color=#00ffff>&nbsp;&nbsp;此工作的内容完全开放，rope为unlicense，你可以在本rope的src内看到源码文件。如果你想添加简繁处理，可以加入opencc，本repo意在unlicense，opencc等有apche等要求，故不加入。为了方便阅读和使用，我已经简化了代码，你可以当作一个SDK使用，为了能够合适大部分人使用，src全部使用的是C语言，假如你有语法基础就可以考虑使用。(注:本人18，05后，目的词库已经维护差不多了,可能不会有更多的精力在词库上面了,后续可能不会再维护此rope)。</font>
 
-## <font color=#ffff88>:fire:关于`快速用户短语`的说明::fire:</font> 
+## <font color=#ffff88>:fire:关于`快速用户短语`的说明: :fire:</font> 
 * <font color=#ff0088>此内容主要解决搜狗五笔的用户自定义短语慢的问题：</font>    
 
 * <font color=#ff0088>方案一：</font>    
