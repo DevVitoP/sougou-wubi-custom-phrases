@@ -1,31 +1,35 @@
-# <font color=#ff8800>:zap:phrases.ini:zap:</font>
-> <font color=#00ffff>:star:为搜狗五笔的定制的码表</font>     
-> <font color=#00ffff>可以在自定义短语功能中粘贴内容，十分建议以管理员身份放入搜狗系统词库内</font>    
+
+<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮,小斌,小斌鹏)</font></font></center>
+
+# <font color=#ff8800>:zap:词库处理内容说明:zap:</font>
+* <font color=#ff0088>实际使用：</font>    
+> <font color=#00ffff>&nbsp;&nbsp;方案内`词库处理后`文件夹内有`测试理论码长`,`快速用户短语`,`词库针对练习`相关的文本,可根据目录名称找到。</font>    
+
+* <font color=#ff0088>词库调整：</font>    
+> <font color=#00ffff>&nbsp;&nbsp;`编码排序`,`码长分类排序`,`有无候选分类排序`相关的几个文件夹,用来方便用文本来快速处理词库，你可以用vim,nvim,gvim,notepad,emacs等高效的文本工具来处理后,简单的复制粘贴到同一个文件内,在拖给程序处理得到与之对应的`快速用户短语`用于实际使用。</font>    
+
+* <font color=#ff0088>Folk SDK去工作：</font>    
+> <font color=#00ffff>&nbsp;&nbsp;此工作的内容完全开放，rope为unlicense，你可以在本rope的src内看到源码文件。如果你想添加简繁处理，可以加入opencc，本repo意在unlicense，opencc等有apche等要求，故不加入。为了方便阅读和使用，我已经简化了代码，你可以当作一个SDK使用，为了能够合适大部分人使用，src全部使用的是C语言，假如你有语法基础就可以考虑使用。(注:本人18，05后，目的词库已经维护差不多了,可能不会有更多的精力在词库上面了,后续可能不会再维护此rope)。</font>
+
+## <font color=#ffff88>:fire:关于`快速用户短语`的说明::fire:</font> 
+* <font color=#ff0088>此内容主要解决搜狗五笔的用户自定义短语慢的问题：</font>    
+
+* <font color=#ff0088>方案一：</font>    
+> <font color=#00ffff>&nbsp;&nbsp;(Phrases.ini)是根据其内置的极少量系统短语的编排方式可能的规律来工作(长度分区再排序);</font>    
+
+* <font color=#ff0088>方案二：</font>    
+> <font color=#00ffff>&nbsp;&nbsp;方案二(BBST\_Phrases.ini)是根据实际使用经验,当自定义了几十万的时候,搜狗五笔会在每次输入的时候会卡顿，考虑其是在内部读为平衡搜索树，尝试以将输入词库读入到一棵AVL树中，以层序输出，这样要是软件内部同样是内存中读入树，则读入的时候，不会在旋转调整平衡的时候浪费时间，以减少其在读入的时候的时间。</font>    
+ 
+* <font color=#ff0088>建议使用方案二：</font>    
+> <font color=#00ff88>&nbsp;&nbsp;&nbsp;&nbsp;在实际的使用中，方案一和方案二不能感知出区别，但方案一是不平衡的树，读入时有旋转操作，所以用方案二。</font>    
+
+## :boom:关于`词库上手练习`:boom:
+ 
+> <font color=#88ff00>&nbsp;&nbsp;&nbsp;&nbsp;可以载入`词库针对练习`相关文本夹内的文本，</font>    
+> <font color=#88ff00>`针对词库练习文本`目录内的`practice.txt`,是本词库的`1简1`,`1简2`,`2简1`的并集</font>    
+> <font color=#88ff00>词库对应具体打法可以快速阅览目录下的`practice_codec.txt`(只含里面有practice.txt的单字的编码)</font>    
 
 
-## <font color=#ffff88>:fire:关于Phrases.ini的定制:fire:</font>
-> <font color=#00ffff>:one:.去除长度大于4的词；(过长难用)</font>    
-
-> <font color=#00ffff>:two:.键名字只在1、2号位置。下面被括号括起来的表示键名字在1级简码中，而实际的2号键的字的内容为括号中的字(为提速)。</font>    
-> |输入：|单键|+|2|||
-> |-|-|-|-|-|-|
-> |撇区|金|(个)|月|白|禾|
-> |捺区|言|(着)|水|火|之|
-> |横区|(其)|木|(而)|(都)|王|
-> |竖区|目|日|口|田|山|
-> |折区|已|子|女|又|(给)|
-
-> <font color=#00ffff>:three:.基于常用单字1500进行更改，使常单1500尽能盲打出来。当字的使用不如词的时候，它将被置后，尽可能地在2号位置(为生文杂文提速)。</font>    
-
-> <font color=#00ffff>:four:.将词库全部浏览后根据频率更改顺序(打词提速)(计划进行ing...)</font>    
-
-> <font color=#00ffff>:five:.基于实际生活中的使用更改顺序(计划进行ing...)</font>    
-
-> <font color=#00ffff>:star:当前优先计划:df\_multi.txt候选修改(计划进行ing...)</font>    
-
-# <font color=#ff8800>:boom:内容说明:boom:</font>
-> <font color=#00ffff>:star:86.txt作为通用码表或用来定制码表的数据来源</font>    
-> <font color=#00ffff>:star:ez\_one.txt,df\_multi.txt为ezdf.c生成的有无候选，候选情况表</font>    
-> <font color=#00ffff>:star:test\_theroy.c作为生成理论码表的源码</font>    
-
+<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮,小斌,小斌鹏)</font></font></center>
+<center><font color=#39c5bb>https://github.com/DevVitoP/sougou-wubi-custom-phrases.git</font></font></center>
 
