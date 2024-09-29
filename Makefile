@@ -23,7 +23,7 @@ all : $(output_path)/$(exe_name)
 Target_obj := $(source_code_path)/$(main_code) $(output_path)/$(res_name)
 Target_lib := $(output_path)/lib$(lib_name).a
 
-$(output_path)/$(exe_name) : $(Target) $(Target_lib)
+$(output_path)/$(exe_name) : $(Target_obj) $(Target_lib)
 	gcc $(Target_obj) -o $@ -L$(output_path) -l$(lib_name) -lcomdlg32 -lshell32 -lole32 -static
 
 #resource.res
