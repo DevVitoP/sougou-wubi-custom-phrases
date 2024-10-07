@@ -22,21 +22,23 @@ main := ./main.c
 main_exe := ./main.exe
 
 delete := rm -f
+CC := gcc
+RC := windres
 
 .PHONY : all clean
 all : $(main_exe)
 
 $(main_exe) : $(main) $(res) $(bcb_obj) $(bmw_obj) $(bk_obj) $(bd_obj) $(bdm_obj)
-	gcc $^ -o $@ -luser32 -lkernel32 -lgdi32 \
+	$(CC) $^ -o $@ -luser32 -lkernel32 -lgdi32 \
 		-lshell32 -lcomdlg32 -lole32 \
 		-mwindows
 
 
 %.o : %.c
-	gcc -c $< -o $@
+	$(CC) -c $< -o $@
 
 $(res) : $(rc)
-	windres --output-format=coff -i $< -o $@
+	$(RC) --output-format=coff -i $< -o $@
 
 clean :
 	-$(delete) $(res) 

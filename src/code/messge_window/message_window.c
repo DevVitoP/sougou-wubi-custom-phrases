@@ -39,7 +39,8 @@ int malloc_and_post(HWND hwnd , wchar_t *str , ...){
 	wchar_t *line_temp_buffer = (wchar_t *)malloc(sizeof(wchar_t)*ENOUGH_SPACES);//free in message proc
 	if (line_temp_buffer == NULL)return 1;
 
-	vswprintf(line_temp_buffer,ENOUGH_SPACES,str,args);
+	vsnwprintf(line_temp_buffer,ENOUGH_SPACES,str,args);
+
 	PostMessageW(hwnd,CTM_WM_READ_MESSAGE_LINE,(UINT_PTR)line_temp_buffer,0);
 
 	va_end(args);
@@ -101,7 +102,7 @@ LRESULT message_window_proc(HWND msg_hwnd,unsigned int message,UINT_PTR up,LONG_
 			memset(&cs,0,sizeof(WNDCLASSW));
 
 			wchar_t *cs_name = (wchar_t*)up;
-			cs.lpfnWndProc = message_window_proc;
+			cs.lpfnWndProc = (WNDPROC)message_window_proc;
 			cs.hInstance = GetModuleHandleW(NULL);
 			cs.hIcon = LoadIconW(GetModuleHandleW(NULL),(wchar_t *)(ICO));
 			cs.hbrBackground = 0;

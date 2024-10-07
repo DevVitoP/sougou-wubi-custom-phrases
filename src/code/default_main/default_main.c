@@ -7,7 +7,7 @@ static int default_main(void);
 static DWORD thread_default_main(void * args);
 
 HANDLE init_default_main_thread(void ){
-	return CreateThread(NULL,0,thread_default_main,NULL,0,NULL);
+	return CreateThread(NULL,0,(LPTHREAD_START_ROUTINE)thread_default_main,NULL,0,NULL);
 }
 
 static DWORD thread_default_main(void * args){
