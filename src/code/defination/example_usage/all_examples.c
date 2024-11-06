@@ -8,7 +8,7 @@
 
 
 //#目录文件建立示例 example1
-#if 1
+#if 0
 int main()
 {
 	//create ./main_work_path
@@ -56,6 +56,54 @@ int main(){
 	while (read_line(filep_in,line_buffer) != EOF){
 		if (line_filter_default(line_buffer) == 1){
 			swscanf(line_buffer,L"%l[^,],%l[^=]=%l[^\n]\n",a,b,c);
+			read_bitree_a(&bi,a,b,c);
+			//if (wcslen(c) > 1)read_bitree_a(&bi,a,b,c);//词
+			//if (_wtoi(b) == 1)read_bitree_a(&bi,a,b,c);//首选
+		}
+	}
+
+	in_order_output_balance_bitree_LR(&bi,filep_out);
+
+	system("pause");
+	return 0;
+}
+#endif
+
+//#方案 to 自定义短语 example2_ex
+#if 1
+int main(){
+
+	if (setlocale(LC_ALL,"zh_CN.utf8") == NULL){
+		if (setlocale(LC_ALL,"chs") == NULL){
+			if (setlocale(LC_ALL,"Chinese-simplified") == NULL){
+				printf("error setlocale.");
+			}
+		}
+	}
+
+	//注：input.txt应为短语格式
+	FILE *filep_in = _wfopen(L"./input.txt",L"r,ccs=UTF-16LE");
+	if (filep_in == NULL)return FILE_ERROR;
+
+	FILE *filep_out = generate_object_file(L".",L"/output.txt",NULL,NULL);
+	if (filep_out == NULL)return FILE_ERROR;
+
+	wchar_t line_buffer[ENOUGH_SPACES];
+	wchar_t a[ENOUGH_SPACES];
+	wchar_t b[ENOUGH_SPACES];
+	wchar_t c[ENOUGH_SPACES];
+
+	struct tree_list *bi = NULL;
+	
+	int line_index = 0;
+
+	while (read_line(filep_in,line_buffer) != EOF){
+		line_index ++;
+
+		if (line_filter_default(line_buffer) == 1){
+			swscanf(line_buffer,L"%l[^\t]\t%l[^\n]\n",a,c);
+			_itow(line_index,b,10);
+
 			read_bitree_a(&bi,a,b,c);
 			//if (wcslen(c) > 1)read_bitree_a(&bi,a,b,c);//词
 			//if (_wtoi(b) == 1)read_bitree_a(&bi,a,b,c);//首选
@@ -187,10 +235,13 @@ int main(){
 	if (filep_out == NULL)return FILE_ERROR;
 
 	//将短语格式,如"wqvb,1=你好",转为,特定格式,如"你好	wqvb1"
-	table_format_convert(filep_in,L"%l[^,],%l[^=]=%l[^\n]\n",L"bca",&line_filter_default,filep_out,L"%ls\t%ls%ls\n");
+	//table_format_convert(filep_in,L"%l[^,],%l[^=]=%l[^\n]\n",L"bca",&line_filter_default,filep_out,L"%ls\t%ls%ls\n");
 	
 	//将短语格式,如"wqvb,1=你好",转为,特定格式,如"wqvb	你好	1"
 	//table_format_convert(filep_in,L"%l[^,],%l[^=]=%l[^\n]\n",L"acb",&line_filter_default,filep_out,L"%ls\t%ls\t%ls\n");
+
+	//将短语格式,如"wqvb,1=你好",转为,特定格式,如"wqvb=1,你好"
+	table_format_convert(filep_in,L"%l[^,],%l[^=]=%l[^\n]\n",L"abc",&line_filter_default,filep_out,L"%ls=%ls,%ls\n");
 
 	//将短语格式,如"wqvb,1=你好",转为,特定格式,如"wqvb	你好"
 	//table_format_convert(filep_in,L"%l[^,],%*l[^=]=%l[^\n]%l[\n]",L"abc",&line_filter_default,filep_out,L"%ls\t%ls%ls");
