@@ -2,7 +2,7 @@
 
 # <font color=#ff8800>:zap:编码表说明:zap:</font>
 > <font color=#00ffff>:star:目录内`86短语BBST.txt`为搜狗五笔自定义短语的定制的码表;</font>     
-> <font color=#00ffff>:star:目录内`86方案.txt`为搜狗五笔自定义方案的定制的码表;</font>     
+> <font color=#00ffff>:star:目录内`scheme/86方案.txt`为搜狗五笔自定义方案的定制的码表;</font>     
 > <font color=#00ffff>编码同搜狗默认UTF-16LE,因为有fffe开头,UTF-8也能打开;</font>    
 > <font color=#00ffff>可以在自定义短语功能中粘贴内容或替换文件。</font>    
 
@@ -88,7 +88,7 @@
 
 |文本来源|理码|
 |-|-|
-|(跟打器)18w测试文本|1.91|
+|(跟打器)18w测试文本|1.92|
 |...|...|
 
 <center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮,小斌,小斌鹏)</font></font></center>
