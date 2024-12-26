@@ -1,5 +1,5 @@
 
-<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮,小斌,小斌鹏)</font></font></center>
+<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮)</font></font></center>
 
 # <font color=#ff8800>:zap:词库处理内容说明:zap:</font>
 * <font color=#ff0088>实际使用：</font>    
@@ -30,6 +30,6 @@
 > <font color=#88ff00>词库对应具体打法可以快速阅览目录下的`practice_codec.txt`(只含里面有practice.txt的单字的编码)</font>    
 
 
-<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮,小斌,小斌鹏)</font></font></center>
+<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮)</font></font></center>
 <center><font color=#39c5bb>https://github.com/DevVitoP/sougou-wubi-custom-phrases.git</font></font></center>
 

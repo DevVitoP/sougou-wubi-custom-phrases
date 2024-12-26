@@ -1,4 +1,4 @@
-<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮,小斌,小斌鹏)</font></font></center>
+<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮)</font></font></center>
 
 # <font color=#ff8800>:zap:编码表说明:zap:</font>
 > <font color=#00ffff>:star:目录内`86短语BBST.txt`为搜狗五笔自定义短语的定制的码表;</font>     
@@ -91,5 +91,5 @@
 |(跟打器)18w测试文本|1.92|
 |...|...|
 
-<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮,小斌,小斌鹏)</font></font></center>
+<center><font color=#39c5bb>Author:<font color=#00ff88> Vito(DevVitoP,朮朮)</font></font></center>
 <center><font color=#39c5bb>https://github.com/DevVitoP/sougou-wubi-custom-phrases.git</font></font></center>
