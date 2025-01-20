@@ -3,14 +3,13 @@
 # <font color=#ff8800>:zap:编码表说明:zap:</font>
 > <font color=#00ffff>:star:目录内`86短语BBST.txt`为搜狗五笔自定义短语的定制的码表;</font>     
 > <font color=#00ffff>:star:目录内`scheme/86方案.txt`为搜狗五笔自定义方案的定制的码表;</font>     
-> <font color=#00ffff>编码同搜狗默认UTF-16LE,因为有fffe开头,UTF-8也能打开;</font>    
+> <font color=#00ffff>编码同搜狗默认UTF-16LE,因为有fffe开头,文本UTF-8模式也能打开;</font>    
 > <font color=#00ffff>可以在自定义短语功能中粘贴内容或替换文件。</font>    
 
 
 ## <font color=#ffff88>:boom:本词库的上手:boom:</font>
-> <font color=#00ffff>&nbsp;&nbsp;本词库就是86词库，打法并没有变，重点熟悉`1简1`,`1简2`,`2简1`现在的顺序就可以上手</font>    
-> <font color=#00ffff>`针对词库练习文本`目录内的`practice.txt`,是本词库的`1简1`,`1简2`,`2简1`的并集</font>    
-> <font color=#00ffff>具体打法可以快速阅览目录下的`practice_codec.txt`(只含里面有的单字的编码)</font>    
+> <font color=#00ffff>&nbsp;&nbsp;本词库向下完全兼容原版86（只有2简词区别）,重点熟悉`2简2词`，以及`1简1`,`1简2`,`2简1`就可以上手</font>    
+> <font color=#00ffff>`针对词库练习文本`目录内的`practice.txt`,是本词库的`1简1`,`1简2`,`2简1`的并集，具体打法可以快速阅览目录下的`practice_codec.txt`</font>    
 
 ## <font color=#ffff88>:fire:关于编码表的优化:fire:</font> 
 * <font color=#ff0088>大体问题描述：</font>    
@@ -76,13 +75,15 @@
 
 > <font color=#00ffff>:nine:.实际使用与打文,评估调整(进行中……)</font>    
 
+> <font color=#00ffff>:keycap\_ten:.增加2简词，位置在2，3号位置；增加3简词(魔改，2025年1月20日23:35:52)。</font>    
+
 
 
 ## <font color=#ffff88>:boom:词库的说明:boom:</font>
 * <font color=#ff0088>工作继承</font>
 > <font color=#00ff88>:star:1.本项目的内容完全开放开源，repo为unlicense，你可以随意使用;</font>    
 > <font color=#00ff88>:star:2.本项目源码可以当作一个SDK，为了使用操作灵活，方便阅读，不制作GUI;</font>    
-> <font color=#00ff88>:star:3.如果你想添加简繁处理，可以加入opencc，本repo意在unlicense，opencc等有apche等要求，故不加入。</font>    
+> <font color=#00ff88>:star:3.如果你想添加简繁处理，可以加入opencc，本repo意在unlicense，opencc等有apache等要求，故不加入。</font>    
 
 * <font color=#ff0088>性能展示</font>
 
