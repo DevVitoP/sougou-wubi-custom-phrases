@@ -1,4 +1,4 @@
-<center><font color=#ffa500>Author:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></font></center>
+<center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></center>
 
 ## :sparkles:词库处理内容说明:sparkles:
 * <font color=#ffa500>使用:</font>    
@@ -29,5 +29,6 @@
 > <font color=#39c5bb>可以快速阅览目录下的`practice_codec.txt`熟悉打法</font>    
 
 
-<center><font color=#ffa500>Author:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></font></center>
-<center><font color=#39c5bb>https://github.com/DevVitoP/sougou-wubi-custom-phrases.git</font></font></center>
+<center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></center>
+
+<center><font color=#39c5bb>https://github.com/DevVitoP/sougou-wubi-custom-phrases.git</font></center>

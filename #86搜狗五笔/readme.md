@@ -1,4 +1,4 @@
-<center><font color=#ffa500>Author:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></font></center>
+<center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></center>
 
 ## :sparkles:编码表说明:sparkles:
 > <font color=#ffa500>:star:目录内`BBST_Phrases.txt`</font>:<font color=#39c5bb>为`PC搜狗五笔`自定义短语的定制的码表;</font>     
@@ -105,5 +105,6 @@
 |(跟打器,作者:消逝)18w内部测试文本|1.94|
 |...|...|
 
-<center><font color=#ffa500>Author:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></font></center>
-<center><font color=#39c5bb>https://github.com/DevVitoP/sougou-wubi-custom-phrases.git</font></font></center>
+<center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></center>
+
+<center><font color=#39c5bb>https://github.com/DevVitoP/sougou-wubi-custom-phrases.git</font></center>
