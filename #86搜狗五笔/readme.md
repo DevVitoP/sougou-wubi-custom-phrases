@@ -1,10 +1,10 @@
-<center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></center>
+<center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮) :tada:</font></center>
 
-## :sparkles:编码表说明:sparkles:
+## :sparkles:编码表说明 :sparkles:
 > <font color=#ffa500>:star:目录内`BBST_Phrases.txt`</font>:<font color=#39c5bb>为`PC搜狗五笔`自定义短语的定制的码表;</font>     
 > <font color=#ffa500>:star:目录内`scheme(for_android)/86scheme.txt`</font>:<font color=#39c5bb>为`手机搜狗`方案的定制的码表;</font>     
 
-## :sparkles:入手词库:sparkles:
+## :sparkles:入手词库 :sparkles:
 * <font color=#39c5bb>&nbsp;&nbsp;本词库向下完全兼容原版86(编码有2简词区别)</font>
 > <font color=#39c5bb>$\begin{cases} 编码重点熟悉[2简2词] \\ 编码顺序熟悉[1简1,1简2,2简1] \end{cases} $</font>    
 
@@ -13,7 +13,7 @@
 <font color=#39c5bb>是本词库的`1简1`,`1简2`,`2简1`的并集,
     具体编码可以快速阅览目录下的`practice_codec.txt`</font>    
 
-## :sparkles:编码表优化:sparkles: 
+## :sparkles:编码表优化 :sparkles: 
 * <font color=#ff0044>大体问题描述：</font>    
 
 > <font color=#39c5bb>:one:.键名字太长,单键4连打慢;</font>    
@@ -92,7 +92,7 @@
 > <font color=#39c5bb>校正:two:.过量的实际使用与打文评估调整(进行中……)</font>    
 
 
-## :sparkles:工作说明:sparkles:
+## :sparkles:工作说明 :sparkles:
 * <font color=#ff0044>工作继承</font>
 > <font color=#39c5bb>:star:1.本项目的内容完全开放开源,repo为unlicense,请随意使用;</font>    
 > <font color=#39c5bb>:star:2.本项目源码可以当作一个SDK,为了使用操作灵活,方便阅读,不制作GUI;</font>    
@@ -105,6 +105,6 @@
 |(跟打器,作者:消逝)18w内部测试文本|1.94|
 |...|...|
 
-<center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></center>
+<center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮) :tada:</font></center>
 
 <center><font color=#39c5bb>https://github.com/DevVitoP/sougou-wubi-custom-phrases.git</font></center>
