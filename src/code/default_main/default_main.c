@@ -1,6 +1,6 @@
-//Written by Vito(DevVitoP、朮朮、小斌、小斌鹏)
+//Written by Vito(DevVitoP、朮朮、小斌鹏)
 
-//others dependence in build file
+//The other dependences in build directory
 #include "default_main.h"
 
 static int default_main(void);
@@ -176,11 +176,17 @@ static int default_main(void){
 	FILE *f_cl_4 = generate_object_file(NULL,output_directory,codec_length_sort,L"/4.codec_length.txt");
 		if (f_cl_4 == NULL)return FILE_ERROR;
 
-	//practice_text_dir
-	FILE *f_practice_codec = generate_object_file(NULL,output_directory,practice_text_dir,L"/practice_codec.txt");
-		if (f_practice_codec == NULL)return FILE_ERROR;
-	FILE *f_practice = generate_object_file(NULL,output_directory,practice_text_dir,L"/practice.txt");
-		if (f_practice == NULL)return FILE_ERROR;
+	//practice1_text_dir
+	FILE *f_practice1_codec = generate_object_file(NULL,output_directory,practice_text_dir,L"/practice1_codec.txt");
+		if (f_practice1_codec == NULL)return FILE_ERROR;
+	FILE *f_practice1 = generate_object_file(NULL,output_directory,practice_text_dir,L"/practice1.txt");
+		if (f_practice1 == NULL)return FILE_ERROR;
+
+	//practice2_text_dir
+	FILE *f_practice2_codec = generate_object_file(NULL,output_directory,practice_text_dir,L"/practice2_codec.txt");
+		if (f_practice2_codec == NULL)return FILE_ERROR;
+	FILE *f_practice2 = generate_object_file(NULL,output_directory,practice_text_dir,L"/practice2.txt");
+		if (f_practice2 == NULL)return FILE_ERROR;
 
 	//test_theory_dir
 	FILE *f_test_theory = generate_object_file(NULL,output_directory,test_theory_dir,L"/test_theory.txt");
@@ -195,7 +201,9 @@ static int default_main(void){
 		if (f_bbst == NULL)return FILE_ERROR;
 	
 
-	FILE *file_analyse_list[] = {f_practice, f_cl_1 , f_cl_2 , f_cl_3 , f_cl_4 , f_practice_codec , f_test_theory};
+	FILE *file_analyse_list[] = {f_practice1,
+			f_cl_1 , f_cl_2 , f_cl_3 , f_cl_4 ,
+			f_practice1_codec , f_test_theory ,f_practice2 , f_practice2_codec};
 
 
 	//first read in temp
@@ -208,9 +216,10 @@ static int default_main(void){
 
 
 	//comment
-	if (f_practice != NULL && f_phrases != NULL){
+	if (f_practice1 != NULL && f_practice2 != NULL && f_phrases != NULL){
 		OUTPUT_MESSAGE(L"\n###################################\n");
-		OUTPUT_MESSAGE(L"NOTICE1:\n\tpractice.txt为【一级简码第一候选和第二候选】与【二级简码的第一候选】的组合表(排序过)，\n\t目的是为了练习此表去熟悉词库。\n");
+		OUTPUT_MESSAGE(L"NOTICE1:\n\tpractice1.txt为【一级简码第一候选和第二候选】与【二级简码的第一候选】的组合表\n");
+		OUTPUT_MESSAGE(L"NOTICE1:\n\tpractice2.txt为【二级简码的第二候选】的组合表\n");
 		OUTPUT_MESSAGE(L"NOTICE2:\n\t搜狗格式自定义短语(极速出字词)在:\n\t(%ls%ls)目录下。\n",output_directory,personal_phrases);
 		OUTPUT_MESSAGE(L"###################################\n");
 	}
@@ -264,7 +273,7 @@ static int default_main(void){
 
 
 	//read temp to bitree
-	fseek(temp,2,SEEK_SET);//2 to skip BOM
+	fseek(temp,2,SEEK_SET);//2 for skipping BOM
 
 	OUTPUT_MESSAGE(L"Creating tree...\n",all_line_count);
 	while(!feof(temp) && !ferror(temp)){
@@ -313,8 +322,10 @@ static int default_main(void){
 	fflush(f_cl_2);
 	fflush(f_cl_3);
 	fflush(f_cl_4);
-	fflush(f_practice);
-	fflush(f_practice_codec);
+	fflush(f_practice1);
+	fflush(f_practice1_codec);
+	fflush(f_practice2);
+	fflush(f_practice2_codec);
 	fflush(f_test_theory);
 
 	//generate phrases
@@ -336,8 +347,10 @@ static int default_main(void){
 	fclose(f_with_child);
 	fclose(f_merge_list);
 	fclose(f_phrases);
-	fclose(f_practice);
-	fclose(f_practice_codec);
+	fclose(f_practice1);
+	fclose(f_practice1_codec);
+	fclose(f_practice2);
+	fclose(f_practice2_codec);
 	fclose(f_cl_1);
 	fclose(f_cl_2);
 	fclose(f_cl_3);
@@ -355,4 +368,4 @@ static int default_main(void){
 	return 0;
 }
 
-//Written by Vito(DevVitoP、朮朮、小斌、小斌鹏)
+//Written by Vito(DevVitoP、朮朮、小斌鹏)

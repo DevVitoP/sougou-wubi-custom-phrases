@@ -1,4 +1,4 @@
-//Written by Vito(DevVitoP、朮朮、小斌、小斌鹏)
+//Written by Vito
 
 #include "choice_box.h"
 

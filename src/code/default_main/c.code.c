@@ -1,5 +1,5 @@
 //Written by Vito
-//the others header in build file
+//the others header in build directory
 
 int main(){
 

@@ -47,7 +47,6 @@ clean :
 	-$(delete) $(bk_obj)
 	-$(delete) $(bd_obj)
 	-$(delete) $(bdm_obj)
-	-$(delete) $(main_exe)
 
 
 

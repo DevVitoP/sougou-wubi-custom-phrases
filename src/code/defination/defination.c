@@ -1,4 +1,4 @@
-//Written by Vito(DevVitoP、朮朮、小斌、小斌鹏)
+//Written by Vito(DevVitoP、朮朮、小斌鹏)
 
 
 //#########################EXPOSE#######################
@@ -1122,12 +1122,28 @@ static void output_bitree_node_to_files(struct tree_list **bitree,FILE *no_child
 	if (f_merge == NULL)return;
 
 	if (f_list == NULL)return;
+
+
 	if (f_list[0] == NULL)return;
+
 	if (f_list[1] == NULL)return;
 	if (f_list[2] == NULL)return;
 	if (f_list[3] == NULL)return;
 	if (f_list[4] == NULL)return;
+
 	if (f_list[5] == NULL)return;
+
+	if (f_list[6] == NULL)return;
+
+	if (f_list[7] == NULL)return;
+	if (f_list[8] == NULL)return;
+
+/*
+file_analyse_list[] = {f_practice1,
+		f_cl_1 , f_cl_2 , f_cl_3 , f_cl_4 ,
+		f_practice1_codec , f_test_theory ,f_practice2 , f_practice2_codec
+		};
+*/
 
 	int codec_length;
 	int codec_num;
@@ -1147,6 +1163,7 @@ static void output_bitree_node_to_files(struct tree_list **bitree,FILE *no_child
 				fwprintf(f_list[5],L"%ls,%ls=%ls\n",(**bitree).e.pa,(**bitree).e.pb,(**bitree).e.pc);
 			}
 		}
+
 	}
 
 	//####
@@ -1174,6 +1191,15 @@ static void output_bitree_node_to_files(struct tree_list **bitree,FILE *no_child
 				if ((codec_length == 1 && codec_num <=2)||(codec_length == 2 && codec_num ==1)){
 					if(wcslen((*next).e.pc) == 1){
 						fwprintf(f_list[0],L"%ls",(*next).e.pc);
+						fwprintf(f_list[5],L"%ls,%ls=%ls\n",(*next).e.pa,(*next).e.pb,(*next).e.pc);
+					}
+
+				}
+
+				if (codec_length == 2 && codec_num ==2){
+					if(wcslen((*next).e.pc) == 2){
+						fwprintf(f_list[8],L"%ls",(*next).e.pc);
+						fwprintf(f_list[7],L"%ls,%ls=%ls\n",(*next).e.pa,(*next).e.pb,(*next).e.pc);
 					}
 				}
 			}
@@ -2050,4 +2076,4 @@ static void set_b_for_wcscat(wchar_t *a,wchar_t *b,int b_pos){
 
 
 
-//Written by Vito(DevVitoP、朮朮、小斌、小斌鹏)
+//Written by Vito(DevVitoP、朮朮、小斌鹏)
