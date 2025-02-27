@@ -6,7 +6,8 @@
 
 ## :sparkles:入手词库 :sparkles:
 * <font color=#39c5bb>&nbsp;&nbsp;本词库向下完全兼容原版86(编码有2简词区别)</font>
-> <font color=#39c5bb>$\begin{cases} 编码重点熟悉[2简2词] \\ 编码顺序熟悉[1简1,1简2,2简1] \end{cases} $</font>    
+> <font color=#39c5bb>:star:.编码重点熟悉`2简2词`;</font>    
+> <font color=#39c5bb>:star:.编码顺序熟悉`1简1`,`1简2`,`2简1`</font>    
 
 
 > <font color=#ffa500>`针对词库练习文本`目录内的`practice.txt`</font>:
@@ -87,9 +88,9 @@
 
 > <font color=#39c5bb>:eight:.增加2简词,位置在2,3号位置;增加3简词(魔改,2025年1月20日23:35:52)</font>    
 
-> <font color=#39c5bb>校正:one:.进行不少于100次打文测试并评估调整。</font>    
+> <font color=#39c5bb>校正 :one:.进行不少于100次打文测试并评估调整。</font>    
 
-> <font color=#39c5bb>校正:two:.过量的实际使用与打文评估调整(进行中……)</font>    
+> <font color=#39c5bb>校正 :two:.过量的实际使用与打文评估调整(进行中……)</font>    
 
 
 ## :sparkles:工作说明 :sparkles:
