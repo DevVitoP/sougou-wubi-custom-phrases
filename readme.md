@@ -1,6 +1,6 @@
 <center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮):tada:</font></center>
 
-## :sparkles:词库处理内容说明:sparkles:
+## :sparkles:词库处理内容说明 :sparkles:
 * <font color=#ffa500>使用:</font>    
 > <font color=#39c5bb>&nbsp;&nbsp;`词库处理后`文件夹内有`测试理论码长`,`用户短语`,`针对词库练习`功能相关的文本,可根据目录名称找到。</font>    
 
@@ -23,7 +23,7 @@
 > <font color=#39c5bb>:star:1.根据内置的极少量短语的规律生成表(即对每个长度的编码分区排序),但如果读入此树,此树相对不那么平衡,会存在旋转操作;</font>    
 > <font color=#39c5bb>:star:2.考虑搜狗读入内存为了搜索会建立AVL树,则可以先外部生成AVL,再层序输出录入到表中,以使搜狗读入时旋转操作的执行为零(编码量大时实际效果相当不错)。</font>    
  
-## :sparkles:`词库练习`说明:sparkles:
+## :sparkles:`词库练习`说明 :sparkles:
  
 > <font color=#39c5bb>`针对词库练习`目录内的`practice.txt`,是词库的`1简1`,`1简2`,`2简1`的并集</font>    
 > <font color=#39c5bb>可以快速阅览目录下的`practice_codec.txt`熟悉打法</font>    
