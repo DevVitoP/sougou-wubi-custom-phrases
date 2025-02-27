@@ -25,9 +25,11 @@
  
 ## :sparkles:`词库练习`说明 :sparkles:
  
-> <font color=#39c5bb>`针对词库练习`目录内的`practice.txt`,是词库的`1简1`,`1简2`,`2简1`的并集</font>    
-> <font color=#39c5bb>可以快速阅览目录下的`practice_codec.txt`熟悉打法</font>    
+> <font color=#39c5bb>`针对词库练习`目录内的`practice1.txt`,是词库的`1简1`,`1简2`,`2简1`的并集</font>    
+> <font color=#39c5bb>可以快速阅览目录下的`practice1_codec.txt`熟悉打法</font>    
 
+> <font color=#39c5bb>`针对词库练习`目录内的`practice2.txt`,是词库的`2简2词`集合</font>    
+> <font color=#39c5bb>可以快速阅览目录下的`practice2_codec.txt`熟悉打法</font>    
 
 <center><font color=#ffa500>Author</font>:<font color=#39c5bb> Vito(DevVitoP,朮朮) :tada:</font></center>
 

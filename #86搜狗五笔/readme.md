@@ -10,9 +10,9 @@
 > <font color=#39c5bb>:star:.编码顺序熟悉`1简1`,`1简2`,`2简1`</font>    
 
 
-> <font color=#ffa500>`针对词库练习文本`目录内的`practice.txt`</font>:
-<font color=#39c5bb>是本词库的`1简1`,`1简2`,`2简1`的并集,
-    具体编码可以快速阅览目录下的`practice_codec.txt`</font>    
+> <font color=#ffa500>`针对词库练习文本`目录内的`practice1.txt`,`practice2.txt`</font>:
+<font color=#39c5bb>分别是本词库的(`1简1`,`1简2`,`2简1`的并集)和(`2简2词`的集合),     
+    具体编码可以快速阅览目录下的`practice1_codec.txt`,`practice2_codec.txt`</font>    
 
 ## :sparkles:编码表优化 :sparkles: 
 * <font color=#ff0044>大体问题描述：</font>    
